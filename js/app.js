@@ -12,6 +12,7 @@ let lastPaintTime=0;
 let snakeArr=[
     {x:13,y:15}
 ]
+food ={x:6,y:7};
 
 //Game function
 function main(ctime){
@@ -35,6 +36,8 @@ function gameEngine(){
         snakeElement.classList.add('snake');
         if(index===0){
             snakeElement.classList.add('head');
+        }else{
+            snakeElement.classList.add('snake');
         }
         board.appendChild(snakeElement);
 
