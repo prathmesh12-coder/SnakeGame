@@ -4,7 +4,7 @@
 }
 
 /* overall container css */
-
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@700&display=swap');
 .body{
     background: url("../img/bg.jpg");
     min-height: 100vh;
@@ -17,6 +17,27 @@
 
 
 /* snakeGame PlayBoard css */
+#scoreBox {
+    position: absolute;
+    color: black;
+    
+    top: 23px;
+    right: 101px;
+    font-size: 31px;
+    font-weight: bold;
+    font-family: 'Lora', serif;
+}
+
+#hiScoreBox{
+    position: absolute;
+    color: black;
+    
+    top: 56px;
+    right: 101px;
+    font-size: 31px;
+    font-weight: bold;
+    font-family: 'Lora', serif;
+}
 
 #board{
     background: linear-gradient(rgb(177, 235, 177),rgb(232, 232, 182));
@@ -29,11 +50,18 @@
 }
 
 .head{
-    background-color: red;
+    background: linear-gradient(red,yellow);
+    border: 2px solid purple;
+    border-radius: 35%;
+    transform: scale(1.15);
 }
 .snake{
     background-color: purple;
+    border: .25 vmin solid white;
+    border-radius: 40%;
 }
 .food{
-    background-color: yellow;
+    background : linear-gradient(red,purple);
+    border: .25 vmin solid black;
+    border-radius: 8px;
 }
